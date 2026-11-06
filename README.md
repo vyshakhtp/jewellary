@@ -13,7 +13,7 @@ A small React dashboard inspired by the supplied screenshot. It uses React for t
 
 - `src/main.jsx` loads React, Bootstrap, the custom stylesheet, and the dashboard.
 - `src/Dashboard.jsx` combines the page components and holds the small page-level interactions.
-- `src/Header.jsx`, `src/Sidebar.jsx`, `src/MetricCards.jsx`, `src/Charts.jsx`, and `src/QuickNavigation.jsx` each contain one part of the dashboard.
+- `src/components/Header.jsx`, `src/components/Sidebar.jsx`, `src/components/MetricCards.jsx`, `src/components/Charts.jsx`, and `src/components/QuickNavigation.jsx` each contain one part of the dashboard.
 - `src/styles.css` contains the colors, layout, and mobile adjustments.
 
 The sidebar buttons switch the selected page heading. The chart buttons update the selected time range, and the refresh button shows a brief update message. The displayed metrics and chart values are sample data for the frontend.
