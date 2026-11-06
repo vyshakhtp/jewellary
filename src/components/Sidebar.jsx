@@ -12,8 +12,9 @@ export default function Sidebar({ active, setActive, menuOpen, setMenuOpen }) {
   return <aside className={`sidebar ${menuOpen ? 'sidebar-open' : ''}`}>
     <nav>{navigation.map(({ label, icon: Icon }) => 
       <button key={label} onClick={() => { setActive(label); setMenuOpen(false); }} className={`nav-item ${active === label ? 'active' : ''}`}>
-        <Icon size={17}/><span>{label}</span></button>)}
-      </nav>
+        <Icon size={17}/><span>{label}</span>
+      </button>)}
+    </nav>
     <button className="logout"><LogOut size={17}/><span>Logout</span></button>
   </aside>;
 }
